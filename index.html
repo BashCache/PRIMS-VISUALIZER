@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+     <meta charset="UTF-8">   
+     <title> Visualizer </title>
+</head>
+<body>
+    <!-- <form> -->
+    <canvas style = "border: 2px solid green; background-color: white" id = "myCanvas"> </canvas>
+    <!-- <button id = "demo" style = "float: right;"> Draw</button> -->
+    <button onClick = "remove()" id = "edge" style = "float: right;"> Connect</button> 
+    <select id = "from_node" style = "float: right;" name="FROM"> 
+    </select>
+    <select id = "to_node" style = "float: right"> 
+    </select>
+    <input type = "number" id = "cost" style = "float: right; display: none" placeholder = "Enter cost" size="3" />
+    <button onClick = "getValues()" style = "float: right;"> GO </button>
+    <input type = "number" id = "start" style = "margin-top: 30px;"/> 
+    <button onClick = "start()" >Go</button>
+    <!-- </form> -->
+    <script src = "index.js" > </script>
+    <!--</canvas>-->
+<!--<h1> HELLO WORLD!! </h1>-->
+</body>
+</html>
